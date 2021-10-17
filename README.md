@@ -33,6 +33,8 @@ Shows you the invite link to invite the bot.
 
 [python-dateutil](https://github.com/dateutil/dateutil) 2.8.2
 
+[epicstore-api](https://github.com/SD4RK/epicstore_api) 0.1.3
+
 ---
 ### Optional Packages
 [uvloop](https://github.com/MagicStack/uvloop) 0.16.0
