@@ -6,6 +6,7 @@ requests~=2.25.1
 Pillow~=8.4.0
 colormap~=1.0.4
 easydev~=0.12.0
+epicstore-api~=0.1.3
 
 # optional (linux only)
 uvloop~=0.16.0
