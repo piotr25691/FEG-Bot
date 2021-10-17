@@ -29,7 +29,7 @@ Shows you the invite link to invite the bot.
 
 [numpy](https://github.com/numpy/numpy) 1.21.2
 
-[requests](https://github.com/psf/requests) 2.25.1
+[requests](https://github.com/psf/requests) 2.26.0
 
 [python-dateutil](https://github.com/dateutil/dateutil) 2.8.2
 
