@@ -11,4 +11,4 @@
 
 Currently this repo uses automated vulnerability detection.
 
-However if you want to report them yourself, do this in the [issues](https://github.com/piotr25691/FEG-Bot/issues).
+However, if you want to report them yourself, do this in the [issues](https://github.com/piotr25691/FEG-Bot/issues).
