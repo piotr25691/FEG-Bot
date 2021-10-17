@@ -1,0 +1,11 @@
+# required
+python-dateutil~=2.8.2
+disnake~=2.1.2
+numpy~=1.21.2
+requests~=2.25.1
+Pillow~=8.4.0
+colormap~=1.0.4
+easydev~=0.12.0
+
+# optional (linux only)
+uvloop~=0.16.0
