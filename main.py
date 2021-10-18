@@ -13,7 +13,7 @@ if os.name != "nt":
     import uvloop
     uvloop.install()
 
-client = commands.Bot(command_prefix="e!", help_command=None, sync_commands=False)
+client = commands.InteractionBot(command_prefix="e!", help_command=None, sync_commands=False)
 
 
 @client.slash_command(name="help", description="Show this help documentation.", aliases=["commands"])
