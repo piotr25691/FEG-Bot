@@ -1,6 +1,6 @@
 # required
 python-dateutil~=2.8.2
-disnake~=2.1.3
+disnake~=2.1.4
 numpy~=1.21.2
 requests~=2.26.0
 Pillow~=8.4.0
