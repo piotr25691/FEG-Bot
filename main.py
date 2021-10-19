@@ -16,7 +16,7 @@ if os.name != "nt":
 client = commands.InteractionBot(command_prefix="e!", help_command=None, sync_commands=False)
 
 
-@client.slash_command(name="help", description="Show this help documentation.", aliases=["commands"])
+@client.slash_command(name="help", description="Show my help documentation.")
 async def _help(inter):
     e = discord.Embed(title="Commands", color=0x2f3136)
     for name, desc in sorted([[command.name, command.description] for command in client.slash_commands if
