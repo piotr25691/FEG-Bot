@@ -19,7 +19,7 @@ Shows you the upcoming free game on the Epic Games Store.
 Shows you the invite link to invite the bot.
 
 # Requirements
-[disnake](https://github.com/EQUENOS/disnake) 2.1.3
+[disnake](https://github.com/EQUENOS/disnake) 2.1.4
 
 [Pillow](https://github.com/python-pillow/Pillow) 8.4.0
 
