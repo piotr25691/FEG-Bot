@@ -43,7 +43,7 @@ async def current(inter):
     fs = parser.parse(
         g["promotions"]["promotionalOffers"][0]["promotionalOffers"][0]["startDate"]).timestamp()
     fu = parser.parse(g["promotions"]["promotionalOffers"][0]["promotionalOffers"][0]["endDate"]).timestamp()
-    g_image = Image.open(requests.get(g["keyImages"][4]["url"], stream=True).raw)
+    g_image = Image.open(requests.get(g["keyImages"][find_dict(g["keyImages"], "type", "DieselStoreFrontWide")]["url"], stream=True).raw)
     avg = numpy.average(numpy.average(g_image, axis=0), axis=0)
     avg = int(rgb2hex(int(avg[0]), int(avg[1]), int(avg[2])).replace("#", "0x"), 16)
     e = discord.Embed(title=g["title"], description=g["description"],
