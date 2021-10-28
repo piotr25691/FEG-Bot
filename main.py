@@ -10,8 +10,11 @@ from disnake.ext import commands
 from utils.functions import *
 
 if os.name != "nt":
-    import uvloop
-    uvloop.install()
+    try:
+        import uvloop
+        uvloop.install()
+    except ModuleNotFoundError:
+        print("- WARNING: uvloop was not found, skipping")
 
 client = commands.InteractionBot(command_prefix="e!", help_command=None, sync_commands=False)
 
