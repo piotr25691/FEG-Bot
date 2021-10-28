@@ -89,8 +89,6 @@ async def _next(inter):
 async def on_command_error(ctx, error):
     if isinstance(error, discord.InteractionTimedOut):
         print("- WARNING: Interaction timed out")
-    else:
-        pass
 
 
 @client.event
