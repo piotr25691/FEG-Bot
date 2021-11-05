@@ -2,7 +2,7 @@
 python-dateutil~=2.8.2
 disnake~=2.2.1
 numpy~=1.21.3
-requests~=2.26.0
+requests~=2.25.1
 Pillow~=8.4.0
 colormap~=1.0.4
 easydev~=0.12.0
