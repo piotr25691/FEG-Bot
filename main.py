@@ -50,7 +50,10 @@ async def current(inter):
                       url=f"https://www.epicgames.com/store/en-US/p/{g['productSlug']}", color=avg)
     e.add_field(name="Seller", value=g["seller"]["name"], inline=True)
     e.add_field(name="Publisher", value=g["customAttributes"][1]["value"], inline=True)
-    e.add_field(name="Developer", value=g["customAttributes"][2]["value"], inline=True)
+    try:
+        e.add_field(name="Developer", value=g["customAttributes"][2]["value"], inline=True)
+    except IndexError:
+        e.add_field(name="Developer", value="Unknown", inline=True)
     e.add_field(name="Original Price", value=g["price"]["totalPrice"]["fmtPrice"]["originalPrice"], inline=True)
     e.add_field(name="Free Since", value=f"<t:{int(fs)}:d>", inline=True)
     e.add_field(name="Free Until", value=f"<t:{int(fu)}:d>", inline=True)
@@ -77,7 +80,10 @@ async def _next(inter):
                       url=f"https://www.epicgames.com/store/en-US/p/{g['productSlug']}", color=avg)
     e.add_field(name="Seller", value=g["seller"]["name"], inline=True)
     e.add_field(name="Publisher", value=g["customAttributes"][1]["value"], inline=True)
-    e.add_field(name="Developer", value=g["customAttributes"][2]["value"], inline=True)
+    try:
+        e.add_field(name="Developer", value=g["customAttributes"][2]["value"], inline=True)
+    except IndexError:
+        e.add_field(name="Developer", value="Unknown", inline=True)
     e.add_field(name="Current Price", value=g["price"]["totalPrice"]["fmtPrice"]["originalPrice"], inline=True)
     e.add_field(name="Free After", value=f"<t:{int(fs)}:d>", inline=True)
     e.add_field(name="Free Until", value=f"<t:{int(fu)}:d>", inline=True)
