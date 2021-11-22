@@ -6,6 +6,7 @@ import requests
 from PIL import Image
 from colormap import rgb2hex
 from disnake.ext import commands
+from dotenv import load_dotenv
 
 from utils.functions import *
 
@@ -17,7 +18,7 @@ if os.name != "nt":
         print("- WARNING: uvloop was not found, skipping")
 
 client = commands.InteractionBot(command_prefix="e!", help_command=None, sync_commands=False)
-
+load_dotenv()
 
 @client.slash_command(name="help", description="Show my help documentation.")
 async def _help(inter):
@@ -103,4 +104,4 @@ async def on_ready():
 
 
 if __name__ == "__main__":
-    client.run("TOKEN_HERE", reconnect=True)
+    client.run(os.environ.get["TOKEN"], reconnect=True)
