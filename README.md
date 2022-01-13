@@ -21,13 +21,13 @@ Shows you the invite link to invite the bot.
 # Requirements
 [disnake](https://github.com/DisnakeDev/disnake) 2.3.0
 
-[Pillow](https://github.com/python-pillow/Pillow) 8.4.0
+[Pillow](https://github.com/python-pillow/Pillow) 9.0.0
 
 [colormap](https://github.com/cokelaer/colormap) 1.0.4
 
 [easydev](https://github.com/cokelaer/easydev) 0.12.0
 
-[numpy](https://github.com/numpy/numpy) 1.21.5
+[numpy](https://github.com/numpy/numpy) 1.22.0
 
 [requests](https://github.com/psf/requests) 2.25.1
 
