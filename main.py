@@ -50,7 +50,10 @@ async def current(inter):
     e = discord.Embed(title=g["title"], description=g["description"],
                       url=f"https://www.epicgames.com/store/en-US/p/{g['productSlug']}", color=avg)
     e.add_field(name="Seller", value=g["seller"]["name"], inline=True)
-    e.add_field(name="Publisher", value=g["customAttributes"][1]["value"], inline=True)
+    try:
+        e.add_field(name="Publisher", value=g["customAttributes"][1]["value"], inline=True)
+    except IndexError:
+        e.add_field(name="Publisher", value="Unknown", inline=True)
     try:
         e.add_field(name="Developer", value=g["customAttributes"][2]["value"], inline=True)
     except IndexError:
