@@ -18,6 +18,8 @@ if os.name != "nt":
         print("- WARNING: uvloop was not found, skipping")
 
 client = commands.InteractionBot(command_prefix="e!", help_command=None, sync_commands=False)
+
+os.chdir("/root/runner/pub/feg-bot")  # change this dir to run your own bot
 load_dotenv()
 
 @client.slash_command(name="help", description="Show my help documentation.")
