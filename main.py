@@ -112,4 +112,4 @@ async def on_ready():
 
 
 if __name__ == "__main__":
-    client.run(os.environ.get["TOKEN"], reconnect=True)
+    client.run(os.environ["TOKEN"], reconnect=True)
