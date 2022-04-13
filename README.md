@@ -21,7 +21,7 @@ Shows you the invite link to invite the bot.
 # Requirements
 [disnake](https://github.com/DisnakeDev/disnake) 2.4.0
 
-[Pillow](https://github.com/python-pillow/Pillow) 9.0.0
+[Pillow](https://github.com/python-pillow/Pillow) 9.1.0
 
 [colormap](https://github.com/cokelaer/colormap) 1.0.4
 
@@ -35,7 +35,7 @@ Shows you the invite link to invite the bot.
 
 [epicstore-api](https://github.com/SD4RK/epicstore_api) 0.1.3
 
-[python-dotenv](https://github.com/theskumar/python-dotenv/) 0.19.2
+[python-dotenv](https://github.com/theskumar/python-dotenv/) 0.20.0
 
 ---
 ### Optional Packages
