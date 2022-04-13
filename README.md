@@ -27,7 +27,7 @@ Shows you the invite link to invite the bot.
 
 [easydev](https://github.com/cokelaer/easydev) 0.12.0
 
-[numpy](https://github.com/numpy/numpy) 1.22.1
+[numpy](https://github.com/numpy/numpy) 1.22.3
 
 [requests](https://github.com/psf/requests) 2.25.1
 
