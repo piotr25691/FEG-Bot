@@ -7,7 +7,7 @@ Pillow~=9.5.0
 colormap~=1.0.4
 easydev~=0.12.1
 epicstore-api~=0.1.5
-python-dotenv~=0.21.1
+python-dotenv~=1.0.0
 
 # optional (linux only)
 # uvloop~=0.17.0  # uncomment if you are on linux
